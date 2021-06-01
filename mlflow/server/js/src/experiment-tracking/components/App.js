@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import logo from '../../common/static/home-logo.png';
+import HCXwhite from '../../common/static/HCX-white.svg';
 import { HashRouter as Router, Route, Link, NavLink } from 'react-router-dom';
 import { RunPage } from './RunPage';
 import Routes from '../routes';
@@ -65,17 +66,12 @@ class App extends Component {
                 </NavLink>
               </div>
               <div className='header-links'>
-                <a href={'https://github.com/mlflow/mlflow'}>
-                  <div className='github'>
-                    <span>GitHub</span>
-                  </div>
-                </a>
-                <a href={'https://mlflow.org/docs/latest/index.html'}>
-                  <div className='docs'>
-                    <span>Docs</span>
-                  </div>
-                </a>
+                <div className='hcx-white'></div>
+                <img className='hcx-white' alt='HCXwhite' src={HCXwhite} />
               </div>
+            </header>
+          )}
+
             </header>
           )}
           <AppErrorBoundary>

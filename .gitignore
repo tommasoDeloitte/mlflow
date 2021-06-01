@@ -32,6 +32,7 @@ wheels/
 *.egg
 MANIFEST
 node_modules
+mlflow/server/js/node_modules
 
 # PyInstaller
 #  Usually these files are written by a python script from a template
